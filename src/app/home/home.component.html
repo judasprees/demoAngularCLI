@@ -1,0 +1,13 @@
+  <a routerLink="/add">Add Patient</a><br><br>
+  <table border="0">
+    <tr>
+      <td>View/Edit</td>
+      <td><b>Name</b></td><br>
+      <td><b>Passport ID</b></td>
+    </tr>
+    <tr *ngFor="let patient of patients" >
+      <td><button type="button" (click)="onEdit(patient)">Edit</button></td>
+      <td>{{patient.patientId}}</td>
+      <td>{{patient.patientCitizen}}</td>
+    </tr>  
+  </table>

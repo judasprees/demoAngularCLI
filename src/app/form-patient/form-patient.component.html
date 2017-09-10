@@ -1,0 +1,9 @@
+
+<form (ngSubmit)="onSubmitPatient(patientForm)" #patientForm="ngForm">
+    <label for="patientName">Name : </label>
+    <input type="text" name="patientId" id="patientId" ngModel [(ngModel)]="patient.patientId"/><br/>
+    <label for="patientCitizen">Citizen : </label>
+    <input type="text" name="patientCitizen" id="patientCitizen" ngModel [(ngModel)]="patient.patientCitizen"/><br/>
+    <button type="submit">{{buttonName}}</button>
+    <br><br><a routerLink="/">Go Back</a>
+  </form>
